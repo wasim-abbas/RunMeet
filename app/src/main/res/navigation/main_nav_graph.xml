@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.zat.runmeet.views.fragments.mainFragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_notificationFragment"
+            app:destination="@id/notificationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/meetFragment"
+        android:name="com.zat.runmeet.views.fragments.mainFragments.MeetFragment"
+        android:label="fragment_meet"
+        tools:layout="@layout/fragment_meet" >
+        <action
+            android:id="@+id/action_meetFragment_to_reportFragment"
+            app:destination="@id/reportFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/meFragment"
+        android:name="com.zat.runmeet.views.fragments.mainFragments.MeFragment"
+        android:label="fragment_me"
+        tools:layout="@layout/fragment_me" >
+        <action
+            android:id="@+id/action_meFragment_to_phoneNumberFragment"
+            app:destination="@id/phoneNumberFragment" />
+        <action
+            android:id="@+id/action_meFragment_to_privacyFragment"
+            app:destination="@id/privacyFragment" />
+        <action
+            android:id="@+id/action_meFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_meFragment_to_socialInfoFragment"
+            app:destination="@id/socialInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/phoneNumberFragment"
+        android:name="com.zat.runmeet.views.fragments.mainFragments.PhoneNumberFragment"
+        android:label="fragment_phone_number"
+        tools:layout="@layout/fragment_phone_number" >
+        <action
+            android:id="@+id/action_phoneNumberFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/privacyFragment"
+        android:name="com.zat.runmeet.views.fragments.mainFragments.PrivacyFragment"
+        android:label="fragment_privacy"
+        tools:layout="@layout/fragment_privacy" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.zat.runmeet.views.fragments.mainFragments.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" />
+    <fragment
+        android:id="@+id/socialInfoFragment"
+        android:name="com.zat.runmeet.views.fragments.mainFragments.SocialInfoFragment"
+        android:label="fragment_social_info"
+        tools:layout="@layout/fragment_social_info" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.zat.runmeet.views.fragments.mainFragments.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/reportFragment"
+        android:name="com.zat.runmeet.views.fragments.mainFragments.ReportFragment"
+        android:label="fragment_report"
+        tools:layout="@layout/fragment_report" />
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.zat.runmeet.views.fragments.mainFragments.AboutUsFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/privacyPolicyFragment"
+        android:name="com.zat.runmeet.views.fragments.mainFragments.PrivacyPolicyFragment"
+        android:label="fragment_privacy_policy"
+        tools:layout="@layout/fragment_privacy_policy" />
+    <fragment
+        android:id="@+id/termsAndConditionsFragment"
+        android:name="com.zat.runmeet.views.fragments.mainFragments.TermsAndConditionsFragment"
+        android:label="fragment_terms_and_conditions"
+        tools:layout="@layout/fragment_terms_and_conditions" />
+</navigation>

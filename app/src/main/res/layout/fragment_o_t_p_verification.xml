@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.fragments.authFragments.OTPVerificationFragment">
+
+    <RelativeLayout
+        android:id="@+id/lltop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/graddient_main"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/viewSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/otp_verification"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:id="@+id/btnBAck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+        <View
+            android:layout_width="@dimen/_64sdp"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_below="@id/viewSignUp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:background="@color/white" />
+
+        <View
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_below="@id/btnBAck"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_34sdp"
+            android:background="@color/white" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:src="@drawable/otp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lltop">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginVertical="@dimen/_16sdp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/please_enter_your_otp_code_here"
+            android:textColor="@color/light_black2"
+            android:textSize="@dimen/_10ssp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:background="@drawable/pink_stroke_bg"
+            android:fontFamily="@font/montserrat_medium"
+            android:hint="@string/enter_otp_code"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:paddingVertical="@dimen/_10sdp"
+            android:paddingStart="@dimen/_12sdp"
+            android:textColor="@color/dark_black"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/btnProceed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginVertical="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_10sdp"
+            android:text="@string/proceed"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_2sdp"
+            android:background="@color/light_pink"
+            />
+        <View
+            android:layout_width="@dimen/_12sdp"
+            android:layout_height="@dimen/_2sdp"
+            android:background="@color/light_pink"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_4sdp"
+            />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

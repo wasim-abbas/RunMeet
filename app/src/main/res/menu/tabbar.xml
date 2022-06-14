@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_run"
+        android:title="Run" />
+    <item
+        android:id="@+id/meetFragment"
+        android:icon="@drawable/ic_meet"
+        android:title="Meet" />
+    <item
+        android:id="@+id/meFragment"
+        android:icon="@drawable/ic_me"
+        android:title="Me" />
+</menu>

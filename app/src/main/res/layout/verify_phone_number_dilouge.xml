@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/llbg"
+    android:orientation="vertical"
+    >
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/verify_phone"
+            android:textColor="@color/light_black2"
+            android:textSize="@dimen/_16ssp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/please_enter_4_digit_code"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/_10ssp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_marginVertical="@dimen/_20sdp"
+            android:gravity="center">
+
+            <EditText
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:background="@drawable/pink_stroke_bg"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:gravity="center"
+                android:maxLength="1"
+                android:paddingVertical="@dimen/_10sdp" />
+
+            <EditText
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:background="@drawable/pink_stroke_bg"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="1"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_10sdp" />
+
+            <EditText
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:background="@drawable/pink_stroke_bg"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:gravity="center"
+                android:maxLength="1"
+                android:paddingVertical="@dimen/_10sdp" />
+
+            <EditText
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:background="@drawable/pink_stroke_bg"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="1"
+                android:gravity="center"
+                android:paddingVertical="@dimen/_10sdp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_10sdp"
+            android:text="@string/mycontinue"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+</LinearLayout>

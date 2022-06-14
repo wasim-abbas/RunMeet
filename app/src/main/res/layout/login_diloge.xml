@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_bg"
+    android:id="@+id/llLogin"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/login" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/login_now"
+        android:textColor="@color/light_black2"
+        android:textSize="@dimen/_16ssp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="@string/please_login_to_continue_using_runmeet"
+        android:textColor="@color/light_black"
+        android:textSize="@dimen/_10ssp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_weight="0.2"
+            android:background="@drawable/pink_stroke_bg"
+            android:drawableEnd="@drawable/ic_drop_down"
+            android:fontFamily="@font/montserrat_medium"
+            android:gravity="center"
+            android:paddingVertical="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_8sdp"
+            android:text="+1"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/_12ssp" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_weight="0.8"
+            android:background="@drawable/pink_stroke_bg"
+            android:hint="@string/phone_number"
+            android:letterSpacing="0.1"
+            android:focusable="false"
+            android:paddingVertical="@dimen/_10sdp"
+            android:paddingStart="@dimen/_12sdp"
+            android:textColor="@color/dark_black"
+            android:textSize="@dimen/_12ssp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:background="@drawable/btn_bg"
+        android:paddingVertical="@dimen/_10sdp"
+        android:layout_marginVertical="@dimen/_16sdp"
+        android:text="@string/mycontinue"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/white"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@android:color/darker_gray"
+            android:layout_weight="0.3"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/or_continue_with"
+            android:layout_weight="0.4"
+            android:gravity="center"
+            android:textSize="@dimen/_9ssp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:fontFamily="@font/montserrat_regular"
+            />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@android:color/darker_gray"
+            android:layout_weight="0.3"
+            android:layout_marginStart="@dimen/_8sdp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginVertical="@dimen/_24sdp"
+        >
+        <TextView
+            android:id="@+id/btnGoogle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg"
+            android:backgroundTint="@color/red"
+            android:drawableStart="@drawable/ic_g"
+            android:text="@string/google"
+            android:layout_weight=".5"
+            android:textSize="@dimen/_12ssp"
+            android:paddingStart="@dimen/_10sdp"
+            android:drawablePadding="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:paddingVertical="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_medium"
+            />
+        <TextView
+            android:id="@+id/btnFacebook"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_bg"
+            android:backgroundTint="@color/dark_blue"
+            android:drawableStart="@drawable/ic_facebookkk"
+            android:text="@string/facebook"
+            android:layout_weight=".5"
+            android:textSize="@dimen/_12ssp"
+            android:drawablePadding="@dimen/_20sdp"
+            android:paddingStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:paddingVertical="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_medium"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

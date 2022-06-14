@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_140sdp"
+    android:layout_margin="@dimen/_16sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_24sdp"
+        android:elevation="@dimen/_2sdp"
+        android:outlineProvider="background"
+        >
+
+        <TextView
+            android:id="@+id/tvDilogemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="@string/notification"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvdilogDes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDilogemail"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/an_otp_verification_code_has_been_send_to_your_number_verify_it"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/_10ssp" />
+
+        <TextView
+            android:id="@+id/btnok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvdilogDes"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="ok"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
+
+            />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

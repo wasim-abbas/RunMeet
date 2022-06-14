@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.fragments.mainFragments.AboutUsFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/lltop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/graddient_main"
+        app:layout_constraintDimensionRatio="1:0.9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/btnBAck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+
+        <View
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_below="@id/btnBAck"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_28sdp"
+            android:background="@color/white" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="@dimen/_16sdp"
+            android:layout_marginBottom="@dimen/_16sdp"
+            android:src="@drawable/about_us" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_32sdp"
+        android:layout_marginTop="-32dp"
+        android:background="@drawable/llbottom_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lltop">
+
+        <TextView
+            android:id="@+id/txtAbtUs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="center"
+            android:text="@string/about_us2"
+            android:textColor="@color/light_black2"
+            android:textSize="@dimen/_12ssp" />
+
+        <View
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_below="@id/txtAbtUs"
+            android:layout_centerHorizontal="true"
+            android:background="@color/light_black2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtAbtUs"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:justificationMode="inter_word"
+            android:letterSpacing=".01"
+            android:lineSpacingExtra="@dimen/_2sdp"
+            android:padding="@dimen/_8sdp"
+            android:text="@string/about_us_text"
+            android:textColor="@color/dark_black"
+            android:textSize="@dimen/_12ssp" />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

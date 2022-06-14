@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".views.fragments.mainFragments.ReportFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/layout_gradient">
+
+        <TextView
+            android:id="@+id/viewSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/report"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+        <TextView
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/montserrat_medium"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_14ssp" />
+
+        <View
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_below="@id/viewSignUp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:background="@color/white" />
+
+        <View
+            android:layout_width="@dimen/_24sdp"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_below="@id/btnBack"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginEnd="@dimen/_34sdp"
+            android:background="@color/white" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_200sdp"
+        android:src="@drawable/report2"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:scaleType="fitXY"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/light_pink" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:background="@drawable/pink_stroke_bg"
+        android:fontFamily="@font/montserrat_medium"
+        android:hint="@string/title"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        android:paddingStart="@dimen/_16sdp"
+        android:textColor="@color/dark_black"
+        android:textSize="@dimen/_10ssp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_90sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:background="@drawable/pink_stroke_bg"
+        android:fontFamily="@font/montserrat_medium"
+        android:hint="@string/description"
+        android:imeOptions="actionDone"
+        android:gravity="start"
+        android:inputType="textMultiLine"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:paddingVertical="@dimen/_10sdp"
+        android:paddingStart="@dimen/_16sdp"
+        android:textColor="@color/dark_black"
+        android:textSize="@dimen/_10ssp" />
+
+    <TextView
+        android:id="@+id/btnProceed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginVertical="@dimen/_16sdp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/montserrat_medium"
+        android:gravity="center"
+        android:paddingVertical="@dimen/_8sdp"
+        android:text="@string/send"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_12ssp" />
+
+
+
+</LinearLayout>

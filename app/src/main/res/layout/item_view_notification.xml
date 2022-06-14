@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_8sdp"
+    >
+
+    <ImageView
+        android:id="@+id/ivProfile"
+        android:layout_width="@dimen/_28sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:src="@drawable/notification_profile" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_toRightOf="@id/ivProfile"
+        android:background="@drawable/pink_stroke_bg"
+        android:fontFamily="@font/montserrat_medium"
+        android:paddingVertical="@dimen/_10sdp"
+        android:paddingStart="@dimen/_12sdp"
+        android:text="@string/lorem_ipsum_is_just_started"
+        android:textColor="@color/dark_black"
+        android:textSize="@dimen/_10ssp" />
+
+</RelativeLayout>
